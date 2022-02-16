@@ -1,0 +1,32 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int numero; 
+		int indice = 0;				
+		Console.Write("Digite quantos numeros quer digitar na sua lista: ");
+		numero = int.Parse(Console.ReadLine());	
+		
+		int[] valores = new int[numero];
+		
+		while(numero > 0)
+		{			
+			Console.Write("Digite o numero da lista indice {0}: ",indice);
+			valores[indice] = int.Parse(Console.ReadLine());	
+			
+			indice++;
+			numero--;
+		}			
+		foreach (int element in valores)
+		{
+			if(valores[element] % 2 == 0)
+			{
+				Console.WriteLine("{0}",valores[element].toString());	
+			}		    		
+		}	
+		
+				
+	}
+}
