@@ -1,0 +1,29 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		Console.Write("Digite a hora que iniciou a Partida :");
+		int ih = int.Parse(Console.ReadLine());
+				
+		Console.Write("Digite os minutos que iniciou a Partida :");
+		int im = int.Parse(Console.ReadLine());
+		
+		DateTime date1 = new DateTime(1996, 1, 1, ih, im, 0);
+		
+		Console.Write("Digite a hora que terminou a Partida :");
+		int fh = int.Parse(Console.ReadLine());
+				
+		Console.Write("Digite os minutos que terminou a Partida :");
+		int fm = int.Parse(Console.ReadLine());
+		
+		DateTime date2 = new DateTime(1996, 1, 1, fh, fm, 0);			
+		
+		TimeSpan diff1 = date2.Subtract(date1);
+		
+		Console.WriteLine("Tempo de duração é de {0} ",diff1);		
+			
+	}
+}

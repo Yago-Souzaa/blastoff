@@ -1,0 +1,15 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		Console.Write("Digite a temperatura de C :");
+		float c = float.Parse(Console.ReadLine());
+		
+		float f = c * 1.8f +32;
+		
+		Console.Write("F é igual a {0}",f.ToString());
+	}
+}

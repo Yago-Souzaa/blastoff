@@ -1,0 +1,30 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	    int i, j ,k ,x, y;
+		float result;
+		
+		Console.WriteLine("Idade I");
+		i = int.Parse(Console.ReadLine());
+		
+		Console.WriteLine("Idade J");
+		j = int.Parse(Console.ReadLine());
+		
+		Console.WriteLine("Idade k");
+		k = int.Parse(Console.ReadLine());
+		
+		Console.WriteLine("Idade x");
+		x = int.Parse(Console.ReadLine());
+		
+		Console.WriteLine("Idade y");
+		y = int.Parse(Console.ReadLine());
+				
+		result = (i+j+k+x+y)/5;
+			
+		Console.Write(result.ToString());
+		
+	}
+}

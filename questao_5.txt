@@ -1,0 +1,19 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		Console.Write("Digite o Numero 1 :");
+		float a = float.Parse(Console.ReadLine());
+		
+		Console.Write("Digite o Numero 2 :");
+		float b = float.Parse(Console.ReadLine());
+		
+		if (a % b == 0)
+			Console.Write("O numeor {0} é mutiplo do {1}",a.ToString(),b.ToString());
+		else 
+			Console.Write("O numeor {0} não é mutiplo do {1}",a.ToString(),b.ToString());	
+	}
+}

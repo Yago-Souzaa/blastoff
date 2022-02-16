@@ -1,0 +1,26 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		Console.Write("Digite o Valor A :");
+		int a = int.Parse(Console.ReadLine());
+		
+		Console.Write("Digite o Valor B :");
+		int b = int.Parse(Console.ReadLine());
+		
+		Console.Write("Digite o Valor C :");
+		int c = int.Parse(Console.ReadLine());
+		
+		int menor = a;
+		
+		if(menor > b)
+        		menor = b;
+   	    	if(menor > c)
+        		menor = c;
+		
+		Console.Write("O Menor valor é {0}",menor.ToString());
+	}
+}

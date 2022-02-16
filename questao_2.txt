@@ -1,0 +1,19 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	    	
+		Console.Write("Digite a distancia Percorrida (KM): ");
+		float dist = float.Parse(Console.ReadLine());
+		
+		Console.Write("Digite o Volume de combustivel Gasto (L): ");
+		float combus = float.Parse(Console.ReadLine());			
+				
+		float consumo = dist/combus ;
+			
+		Console.Write("O consumo foi de {0} KM/L",consumo.ToString());
+		
+	}
+}
